@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div>
-      <img v-bind:style="imageStyle" src="./assets/website_background.png">
+      <img v-bind:style="imageStyle" src="./assets/website_background.png"
+           alt="http://mapiraj.me/website-background-images/website-background-images-2/"
+      >
       <h1 v-bind:style="messageStyle">Matthew O'Boyle</h1>
       <h1 v-bind:style="lowerStyle">Software Engineer</h1>
       <a href="mailto:mo121@cs.duke.edu?subject=Message from Website&body=Dear Matthew O'Boyle,"
