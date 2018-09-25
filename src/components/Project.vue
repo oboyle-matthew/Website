@@ -1,6 +1,6 @@
 <template>
   <div v-bind:style="appStyle">
-    <img class="col-lg-8" :src="require(`../assets/${image}`)">
+    <img class="col-lg-8 project_image" :src="require(`../assets/${image}`)">
     <div class="col-lg-3">
       <h3>{{name}}</h3>
       <p id="project_text">{{info}}</p>
@@ -32,5 +32,10 @@
 
   #project_text {
     font-size: 15px;
+  }
+
+  .project_image {
+    width: 50vw;
+    height: 50vh;
   }
 </style>

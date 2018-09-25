@@ -24,10 +24,6 @@
           v-bind:title=thing.title
           v-bind:position=thing.position />
       </div>
-
-      <!--<Experience date="dateTest" info="infoTest"/>-->
-      <!--<Experience date="May 2017 - June 2018" info="Was in a team of 10 students..." title="Duke University" position="TA"/>-->
-
     </div>
     <div>
       <h1 v-bind:style="center">Portfolio</h1>
