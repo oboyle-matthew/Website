@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Design Checklist",
+    "image": "design_checklist.png",
+    "language": "Javascript -- React",
+    "demo": "http://compsci308.colab.duke.edu",
+    "info": "Creating a graphical user interface to visualize the quality of Java code. This program is used for both students and TA's in Compsci 308 classes in order to analyze and help grade students' code."
+  },
+  {
+    "name": "VOOGA",
+    "image": "vooga.png",
+    "language": "Java",
+    "demo": "https://github.com/oboyle-matthew/vooga",
+    "info": "In a team of ten students, wrote a Java program to create a game authoring environment that allows users with no programming skills to build and play 2D video games."
+  },
+  {
+    "name": "SLOGO",
+    "image": "slogo.png",
+    "language": "Java",
+    "demo": "https://github.com/oboyle-matthew/slogo",
+    "info": "In a team with three other students, provided an IDE that supports users to write Logo programs. Allows users with no prior coding experience to command turtles interactively, on a per-expression basis."
+  },
+  {
+    "name": "Dots",
+    "image": "dots.png",
+    "language": "Javascript -- Vue",
+    "demo": "https://www.indiegogo.com/projects/dots-efficiently-learn-foreign-languages#/",
+    "info": "Project for Duke Startup Challenge in a team with five other students. Designed a website that helps non-native English speakers to improve their language skills through pronunciation."
+  },
+  {
+    "name": "Cell Society",
+    "image": "cell_society.png",
+    "language": "Java",
+    "demo": "https://github.com/oboyle-matthew/cellsociety",
+    "info": "In a team with three other students, wrote a Java program using JavaFX and reading in XML files that animates any 2D grid Cellular Automata simulation. "
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "title": "TRACLabs",
+    "date": "May 2018 - August 2018",
+    "position": "Software Engineer Intern",
+    "info": "Worked with NASA to produce a graphical user interface for moon rover paths. The interface is currently used by both NASA and TRACLabs employees to determine most efficient paths in areas of interest."
+  },
+  {
+    "title": "Duke University",
+    "date": "Jan 2018 - Present",
+    "position": "Teaching Assistant",
+    "info": "Mentor four students each semester for Computer Science 308 - Software Design and Implementation -- which includes regular meetings to analyze code design and effectiveness, along with grading students' assignments."
+  },
+  {
+    "title": "Coursera",
+    "date": "April 2018 - August 2018",
+    "position": "Teaching Assistant",
+    "info": "Helped design and improve Duke Coursera's \"Solving Problems with Software\" class, that introduces students to programming in Java."
+  },
+
+  {
+    "title": "Duke University",
+    "date": "Jan 2017 - May 2018",
+    "position": "Peer Tutor",
+    "info": "Tutored fellow undergraduate students in Computer Science 101, where students learn the basics of Python."
+  }
+]
