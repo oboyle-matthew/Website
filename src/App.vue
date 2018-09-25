@@ -4,13 +4,18 @@
       <img v-bind:style="imageStyle" src="./assets/website_background.png"
            alt="http://mapiraj.me/website-background-images/website-background-images-2/"
       >
-      <h1 v-bind:style="messageStyle">Matthew O'Boyle</h1>
-      <h1 v-bind:style="lowerStyle">Software Engineer</h1>
-      <a href="mailto:mo121@cs.duke.edu?subject=Message from Website&body=Dear Matthew O'Boyle,"
-         v-bind:style="lower2Style">Email me</a>
-      <a href="resume.pdf" download="Matthew O'Boyle Resume.pdf" v-bind:style="lower3Style">Download Resume</a>
+      <h1 v-bind:style="messageStyle">MATTHEW O'BOYLE</h1>
+      <h1 v-bind:style="lowerStyle">SOFTWARE ENGINEER</h1>
+      <div v-bind:style="lower2Style">
+        <a v-bind:style="{color: 'white'}" href="mailto:mo121@cs.duke.edu?subject=Message from Website&body=Dear Matthew O'Boyle,"
+        >EMAIL ME</a>
+      </div>
+      <div v-bind:style="lower3Style">
+        <a v-bind:style="{color: 'white'}" href="resume.pdf" download="Matthew O'Boyle Resume.pdf">DOWNLOAD RESUME</a>
+      </div>
+
     </div>
-    <div v-bind:style="thin">
+    <div v-bind:style="thin2">
       <h1>About</h1>
       <p>Hi there! My name's Matthew O'Boyle and I'm a Junior at Duke University interested in pursuing a career
         in Software Development. I love identifying and solving real-world problems through technology.
@@ -40,9 +45,9 @@
       </div>
     </div>
     <div class="row grey">
-      <div v-bind:style="{textAlign: 'center'}" class="col-md-4">
+      <div class="col-md-4">
         <!--<h1 v-bind:style="{textAlign: 'center'}">Duke University</h1>-->
-        <h3 v-bind:style="{marginBottom: '2vh'}">Relevant coursework</h3>
+        <h3 v-bind:style="{marginBottom: '2vh', textAlign: 'center'}">Relevant Coursework</h3>
         <ul>
           <li>Computer Architecture (C)</li>
           <li>Data Structures and Algorithms </li>
@@ -69,25 +74,25 @@
 
     </div>
     <div v-bind:style="thin">
-      <h1>Outside the Classroom</h1>
+      <h1 v-bind:style="{textAlign: 'center', marginBottom: '4vh'}">Outside the Classroom</h1>
       <h5>Camp Kesem</h5>
-      <p>For the past 2 years, I have been head of Operations Committee at Camp Kesem -- a camp that supports children
+      <p v-bind:style="notCentered">For the past 2 years, I have been head of Operations Committee at Camp Kesem -- a camp that supports children
         through and beyond a parent's cancer. This involves planning and fundraising throughout the year and culminates
         at a week-long summer camp completely free for the campers to attend.
       </p>
       <h5>Tennis</h5>
-      <p>From the age of 7, I have played tennis at a competitive level. Throughout high school, I represented my country
+      <p v-bind:style="notCentered">From the age of 7, I have played tennis at a competitive level. Throughout high school, I represented my country
         on numerous occasions in junior events, finishing 4th in Ireland before moving to college.
         I also coached many other top junior players in my club.
         I currently play on Duke's club tennis team.
       </p>
       <h5>Music</h5>
-      <p>I achieved ABRSM Grade 8 piano and clarinet and taught myself saxophone in high school. For the past two semesters, I
+      <p v-bind:style="notCentered">I achieved ABRSM Grade 8 piano and clarinet and taught myself saxophone in high school. For the past two semesters, I
         have played piano for patients and family members at Duke Hospital.
       </p>
     </div>
     <div class="grey">
-      <h1 class="col-xs-12" v-bind:style="thin">View More</h1>
+      <h1 class="col-xs-12" v-bind:style="thin2">View More</h1>
       <div v-bind:style="flex">
 
         <a href="https://github.com/oboyle-matthew" target="_blank" title="View my Github">
@@ -176,18 +181,16 @@
         overflow: 'none'
       },
       messageStyle: {
-        fontWeight: 'bolder',
         fontSize: '4vw',
         position: 'absolute',
         color: 'white',
         top: '20vh',
         width: '100vw',
         textAlign: 'center',
-        overflow: 'none'
+        overflow: 'none',
       },
       lowerStyle: {
-        fontWeight: 'bolder',
-        fontSize: '2.5vw',
+        fontSize: '2vw',
         position: 'absolute',
         color: 'white',
         top: '30vh',
@@ -196,33 +199,48 @@
         overflow: 'none'
       },
       lower2Style: {
-        fontWeight: 'bolder',
-        fontSize: '3vw',
+        fontSize: '2vw',
         position: 'absolute',
         color: 'white',
         left: '37vw',
-        top: '55vh',
-        overflow: 'none'
+        top: '54.4vh',
+        height: '10vh',
+        width: '13vw',
+        overflow: 'none',
+        lineHeight: '10vh'
+
       },
       lower3Style: {
-        fontWeight: 'bolder',
-        fontSize: '2.8vw',
+        fontSize: '1.8vw',
         position: 'absolute',
         color: 'white',
         left: '52vw',
-        top: '54.5vh',
+        top: '54.4vh',
+        height: '10vh',
         width: '13vw',
         overflow: 'none',
-        wordSpacing: '100vw',
-        lineHeight: '5vh',
-        textAlign: 'center'
+        // wordSpacing: '100vw',
+        textAlign: 'center',
+        lineHeight: '5vh'
+
       },
       thin: {
         position: 'relative',
         left: '20vw',
         right: '20vw',
         width: '60vw',
+        textAlign: 'left'
+      },
+      thin2: {
+        position: 'relative',
+        left: '20vw',
+        right: '20vw',
+        width: '60vw',
         textAlign: 'center'
+      },
+      notCentered: {
+        textAlign: 'left',
+        marginBottom: '5vh'
       },
       center: {
         textAlign: 'center'
@@ -268,8 +286,8 @@
     height: 25vh;
   }
 
-  * {
-    font-family: 'sans-serif';
+  p {
+    font-family: "Verdana";
   }
 
   .grey {

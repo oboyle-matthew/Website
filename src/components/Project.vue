@@ -1,7 +1,7 @@
 <template>
   <div v-bind:style="appStyle">
     <img class="col-lg-8 project_image" :src="require(`../assets/${image}`)">
-    <div class="col-lg-3">
+    <div class="col-lg-4">
       <h3>{{name}}</h3>
       <p id="project_text">{{info}}</p>
       <a v-bind:href="demo" target="_blank">View</a>
