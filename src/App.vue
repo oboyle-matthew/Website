@@ -97,9 +97,11 @@
 
         <a href="https://github.com/oboyle-matthew" target="_blank" title="View my Github">
           <img  class="image" src="./images/github.png"/>
+          <p v-bind:style="{textAlign: 'center'}">View my Github</p>
         </a>
         <a href="https://www.linkedin.com/in/matthewoboyle1/" target="_blank" title="View my LinkedIn">
           <img id="linked" class="image" src="./images/linkedin.png"/>
+          <p v-bind:style="{textAlign: 'center'}">View my LinkedIn</p>
         </a>
 
       </div>
@@ -110,6 +112,7 @@
         </a>
         <a href="mailto:mo121@cs.duke.edu?subject=Message from Website&body=Dear Matthew O'Boyle," title="Send me an email">
           <img id="mail" class="image" src="./images/email.png"/>
+          <p v-bind:style="{textAlign: 'center'}">Send me an Email</p>
         </a>
       </div>
     </div>
@@ -255,6 +258,13 @@
 </script>
 
 <style>
+  @media (max-width: 800px) {
+    ul {
+      text-align: center;
+      list-style-position: inside;
+    }
+  }
+
   * {
     margin: 0;
   }
@@ -269,17 +279,20 @@
   }
 
   .image {
-    width: 15vw
+    width: 15vw;
+    height: 20vh;
   }
 
   #linked {
     margin-top: -2vh;
-    width: 20vw
+    width: 20vw;
+    height: 22vh;
   }
 
   #mail {
     margin-top: -4vh;
     width: 20vw;
+    height: 29vh;
   }
 
   .resume {
